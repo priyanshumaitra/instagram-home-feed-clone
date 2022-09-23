@@ -1,1 +1,1 @@
-# instagram-home-feed-clone
+# Instagram Home Feed
