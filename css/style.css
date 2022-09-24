@@ -27,7 +27,7 @@ body {
   padding: 5px 0;
 }
 
-.navbar-elements {
+.navbar-wrapper {
   width: 70%;
   max-width: 1000px;
   height: 100%;
@@ -51,7 +51,7 @@ body {
   border: none;
   border-radius: 7px;
   color: rgba(0, 0, 0, 0.5);
-  text-align: left;
+  /* text-align: left; */
 }
 .search::placeholder {
   font-size: 16px;
@@ -65,19 +65,20 @@ body {
 .icons {
   height: 100%;
   cursor: pointer;
-  margin: 0 5px;
+  margin: 0 10px;
   display: inline-block;
 }
 
 .user-accoount {
   width: 23px;
   border-radius: 50%;
+  background-image: url(assets/images/nav-items/user.png);
   background-size: cover;
 }
 
 .main {
   width: 100%;
-  padding: 40 0px;
+  padding: 40px 0;
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -88,7 +89,8 @@ body {
   max-width: 1000px;
   display: grid;
   grid-template-columns: 60% 40%;
-  margin-top: 35px;
+  grid-row-gap: 30px;
+  /* margin-top: 35px; */
 }
 
 .left-col {
@@ -362,7 +364,7 @@ body {
   .search {
     display: none;
   }
-  .navbar-elements,
+  .navbar-wrapper,
   .wrapper {
     width: 90%;
   }
@@ -373,7 +375,7 @@ body {
 @media (max-width: 550px) {
   .nav-items,
   .icons {
-    margin: 0, 5px;
+    margin: 2px;
   }
   .post-image {
     height: 300px;
