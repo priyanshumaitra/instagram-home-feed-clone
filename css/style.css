@@ -356,3 +356,26 @@ body {
   font-weight: 400;
   margin-top: 4px;
 }
+
+@media (max-width: 1100px) {
+  .right-col,
+  .search {
+    display: none;
+  }
+  .navbar-elements,
+  .wrapper {
+    width: 90%;
+  }
+  .wrapper {
+    display: block;
+  }
+}
+@media (max-width: 550px) {
+  .nav-items,
+  .icons {
+    margin: 0, 5px;
+  }
+  .post-image {
+    height: 300px;
+  }
+}
