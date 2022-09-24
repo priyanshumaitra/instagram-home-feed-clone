@@ -11,7 +11,8 @@ body {
   width: 100%;
   background-color: #fafafa;
   position: relative;
-  font-family: "Roboto", sans-serif;
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
 }
 .navbar {
   position: fixed;
@@ -35,8 +36,9 @@ body {
   align-items: center;
 }
 .logo {
-  height: 100%;
+  height: 85%;
   margin-top: 5px;
+  cursor: pointer;
 }
 
 .search {
@@ -51,6 +53,10 @@ body {
   color: rgba(0, 0, 0, 0.5);
   text-align: left;
 }
+.search::placeholder {
+  font-size: 16px;
+  padding-left: 15px;
+}
 .nav-items {
   height: 24px;
   position: relative;
@@ -63,7 +69,7 @@ body {
   display: inline-block;
 }
 
-.user {
+.user-accoount {
   width: 23px;
   border-radius: 50%;
   background-size: cover;
@@ -131,6 +137,7 @@ body {
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid #fff;
+  cursor: pointer;
 }
 .username {
   width: 100%;
@@ -142,7 +149,216 @@ body {
 }
 
 .post {
+  width: 100;
+  height: auto;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  margin-top: 16px;
+  border-radius: 8px;
 }
-/* 
+.info {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.info .username {
+  width: auto;
+  font-weight: bold;
+  color: #262626;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.info .options {
+  height: 10px;
+  cursor: pointer;
+}
+
+.info .user {
+  display: flex;
+  align-items: center;
+}
+
+.info .status-pic {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  background: none;
+}
+
+.info .status-pic img {
+  border: none;
+}
+
+.post-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.post-content {
+  width: 100%;
+  padding: 20px;
+}
+.likes {
+  font-weight: bold;
+}
+
+.description {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.description span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.no-comments {
+  color: #9c8e8e;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.post-time {
+  color: #bbb8bf;
+  font-size: 10px;
+  margin-bottom: auto;
+}
+
+.comment-wrapper {
+  width: 100%;
+  height: 40px;
+  border-radius: 1px solid #dfdfdf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.comment-wrapper .icons {
+  height: 25px;
+}
+
+.comment-box {
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.comment-btn,
+.action-btn,
+.seeall-btn {
+  width: 70px;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #bde3fc;
+  font-weight: bold;
+}
+
+.reaction-wrapper {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  margin-top: -20px;
+  align-items: center;
+}
+
+.reaction-wrapper .icons {
+  height: 25px;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.reaction-wrapper .icons.save {
+  /* align-items: left; */
+  margin-left: auto;
+}
+
 .right-col {
-} */ ;
+  padding: 20px;
+}
+.profile-card {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-card .status-pic {
+  flex: 0 0 auto;
+  padding: 0;
+  background: none;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.profile-card:first-child .status-pic {
+  width: 60px;
+  height: 60px;
+}
+/* .profile-card .status-pic img {
+  border: none;
+} */
+
+.profile-card .pro-user {
+  font-weight: 600;
+  font-size: 14px;
+  color: #000;
+}
+.sub-text {
+  color: #8e8e8e;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+.action-btn {
+  color: #0095f6;
+  opacity: 1;
+  font-size: 12px;
+  font-weight: 700;
+  padding-left: 90px;
+}
+/* profile car er nicher gulo */
+
+.suggestion-text {
+  font-size: 14px;
+  color: #8e8e8e;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.seeall-btn {
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  /* padding-left: 90px; */
+  margin-left: 120px;
+  /* align-items: left; */
+  cursor: pointer;
+}
+
+/* suggestion er nicher gulo */
+
+.follow-btn {
+  padding-left: 110px;
+  /* margin-left: 100px; */
+}
+.sug-text {
+  color: #8e8e8e;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 4px;
+}
