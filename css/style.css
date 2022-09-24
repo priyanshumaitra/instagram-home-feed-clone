@@ -331,7 +331,6 @@ body {
   font-weight: 700;
   padding-left: 90px;
 }
-/* profile car er nicher gulo */
 
 .suggestion-text {
   font-size: 14px;
@@ -344,17 +343,12 @@ body {
   color: #000;
   font-size: 12px;
   font-weight: 700;
-  /* padding-left: 90px; */
   margin-left: 120px;
-  /* align-items: left; */
   cursor: pointer;
 }
 
-/* suggestion er nicher gulo */
-
 .follow-btn {
   padding-left: 110px;
-  /* margin-left: 100px; */
 }
 .sug-text {
   color: #8e8e8e;
