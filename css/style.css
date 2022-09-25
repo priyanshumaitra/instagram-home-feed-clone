@@ -331,7 +331,7 @@ body {
   opacity: 1;
   font-size: 12px;
   font-weight: 700;
-  padding-left: 90px;
+  padding-left: 100px;
 }
 
 .suggestion-text {
@@ -345,12 +345,12 @@ body {
   color: #000;
   font-size: 12px;
   font-weight: 700;
-  margin-left: 120px;
+  margin-left: 130px;
   cursor: pointer;
 }
 
 .follow-btn {
-  padding-left: 110px;
+  margin-left: 32px;
 }
 .sug-text {
   color: #8e8e8e;
@@ -380,4 +380,7 @@ body {
   .post-image {
     height: 300px;
   }
+}
+.pointpoint {
+  cursor: pointer;
 }
