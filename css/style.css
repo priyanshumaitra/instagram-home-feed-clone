@@ -332,6 +332,7 @@ body {
   font-size: 12px;
   font-weight: 700;
   padding-left: 100px;
+  cursor: pointer;
 }
 
 .suggestion-text {
