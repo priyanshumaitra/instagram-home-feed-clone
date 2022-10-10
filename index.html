@@ -10,6 +10,7 @@
       href="assets/images/insta-favicon.ico"
     />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/83ccd457ed.js" crossorigin="anonymous"></script>
     <title>Instagram</title>
   </head>
   <body>
@@ -59,56 +60,61 @@
     <section class="main">
       <div class="wrapper">
         <div class="left-col">
-          <div class="status-wrapper">
-            <div class="status-card">
-              <div class="status-pic">
-                <img src="assets/images/profile/status-1.jpg" />
+            <div class="status-wrapper">
+              <button class="story--scroll" id="scroll-left" onclick="scrollHorizontal(1)"><i class="fas fa-chevron-left"></i></button>
+              <button class="story--scroll" id="scroll-right" onclick="scrollHorizontal(-1)"><i class="fas fa-chevron-right"></i></button>
+              <div class="stories">
+                <div class="status-card">
+                  <div class="status-pic">
+                    <img src="assets/images/profile/status-1.jpg" />
+                  </div>
+                  <p class="username">debajyoti_r...</p>
+                </div>
+                <div class="status-card">
+                  <div class="status-pic">
+                    <img src="assets/images/profile/status-2.jpg" />
+                  </div>
+                  <p class="username">su1nta</p>
+                </div>
+                <div class="status-card">
+                  <div class="status-pic">
+                    <img src="assets/images/profile/status-3.jpg" />
+                  </div>
+                  <p class="username">lexfridman</p>
+                </div>
+                <div class="status-card">
+                  <div class="status-pic">
+                    <img src="assets/images/profile/status-4.jpg" />
+                  </div>
+                  <p class="username">golimitless</p>
+                </div>
+                <div class="status-card">
+                  <div class="status-pic">
+                    <img src="assets/images/profile/status-5.jpg" />
+                  </div>
+                  <p class="username">markrober</p>
+                </div>
+                <div class="status-card">
+                  <div class="status-pic">
+                    <img src="assets/images/profile/status-6.jpg" />
+                  </div>
+                  <p class="username">hubermanlab</p>
+                </div>
+                <div class="status-card">
+                  <div class="status-pic">
+                    <img src="assets/images/profile/status-8.jpg" />
+                  </div>
+                  <p class="username">waitbutwhy</p>
+                </div>
+                <div class="status-card">
+                  <div class="status-pic">
+                    <img src="assets/images/profile/status-7.jpg" />
+                  </div>
+                  <p class="username">geeks_for_g...</p>
+                </div>
               </div>
-              <p class="username">debajyoti_r...</p>
             </div>
-            <div class="status-card">
-              <div class="status-pic">
-                <img src="assets/images/profile/status-2.jpg" />
-              </div>
-              <p class="username">su1nta</p>
-            </div>
-            <div class="status-card">
-              <div class="status-pic">
-                <img src="assets/images/profile/status-3.jpg" />
-              </div>
-              <p class="username">lexfridman</p>
-            </div>
-            <div class="status-card">
-              <div class="status-pic">
-                <img src="assets/images/profile/status-4.jpg" />
-              </div>
-              <p class="username">golimitless</p>
-            </div>
-            <div class="status-card">
-              <div class="status-pic">
-                <img src="assets/images/profile/status-5.jpg" />
-              </div>
-              <p class="username">markrober</p>
-            </div>
-            <div class="status-card">
-              <div class="status-pic">
-                <img src="assets/images/profile/status-6.jpg" />
-              </div>
-              <p class="username">hubermanlab</p>
-            </div>
-            <div class="status-card">
-              <div class="status-pic">
-                <img src="assets/images/profile/status-8.jpg" />
-              </div>
-              <p class="username">waitbutwhy</p>
-            </div>
-            <div class="status-card">
-              <div class="status-pic">
-                <img src="assets/images/profile/status-7.jpg" />
-              </div>
-              <p class="username">geeks_for_g...</p>
-            </div>
-          </div>
+          <!-- Posts------------------------------------------- ---------------------- -->
           <div class="post">
             <div class="info">
               <div class="user">
@@ -395,5 +401,35 @@
         </div>
       </div>
     </section>
+
+    <script>
+      let currentScroll = 0;
+      let scrollAmount = 320;
+
+      const sCont = document.querySelector(".stories")
+      const hScroll = document.querySelector(".status-wrapper")
+      const leftButton = document.querySelector("#scroll-left")
+      const rightButton = document.querySelector("#scroll-right")
+
+      let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
+      leftButton.style.opacity = '0'
+
+      function scrollHorizontal(val){
+        currentScroll += (val * scrollAmount);
+        if(currentScroll >= 0){
+          currentScroll = 0
+          leftButton.style.opacity = '0'
+        }else{
+          leftButton.style.opacity = '1'
+        }
+        if(currentScroll <= maxScroll){
+          currentScroll = maxScroll
+          rightButton.style.opacity = '0'
+        }else{
+          rightButton.style.opacity = '1'
+        }
+        sCont.style.left = currentScroll + "px"
+      }
+    </script>
   </body>
 </html>
