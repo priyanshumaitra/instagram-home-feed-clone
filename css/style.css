@@ -256,7 +256,6 @@ body {
 .comment-btn,
 .action-btn,
 .seeall-btn {
-  width: 70px;
   height: 100%;
   background: none;
   border: none;
@@ -290,9 +289,9 @@ body {
   padding: 20px;
 }
 .profile-card {
-  width: fit-content;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   margin-bottom: 10px;
 }
@@ -326,12 +325,16 @@ body {
   margin-top: 4px;
 }
 
+.action-div {
+  margin-left: auto;
+}
+
 .action-btn {
   color: #0095f6;
   opacity: 1;
   font-size: 12px;
   font-weight: 700;
-  padding-left: 100px;
+  /* padding-left: 100px; */
   cursor: pointer;
 }
 
@@ -350,9 +353,6 @@ body {
   cursor: pointer;
 }
 
-.follow-btn {
-  margin-left: 32px;
-}
 .sug-text {
   color: #8e8e8e;
   font-size: 12px;
