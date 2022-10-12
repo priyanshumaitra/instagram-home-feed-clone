@@ -97,24 +97,47 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 .status-wrapper {
   width: 100%;
   height: 117px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
   background: #fff;
   border: 1px solid #dfdfdf;
   border-radius: 8px;
   padding: 10px;
-  padding-right: 0;
   display: flex;
-  align-items: center;
   overflow: hidden;
-  overflow-x: auto;
 }
 
+.stories{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0;
+  transition: 0.5s all ease-out;
+}
 .status-wrapper::-webkit-scrollbar {
   display: none;
 }
+.story--scroll{
+  background-color: #fff;
+  color: #999;
+  padding: 5px 8px;
+  border: 0;
+  border-radius: 50%;
+  cursor: poiner;
+  box-shadow: 0 0 10px #999;
+  z-index: 1;
+  cursor: pointer;
+  margin: 0px 5px;
+  transition: 0.7s;
+}
+
 .status-card {
   flex: 0 0 auto;
   width: 80px;
