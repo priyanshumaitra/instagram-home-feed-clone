@@ -289,6 +289,10 @@ body {
   font-weight: bold;
 }
 
+.comment-btn{
+  padding-right: 1.3rem;
+}
+
 .reaction-wrapper {
   width: 100%;
   height: 50px;
@@ -306,6 +310,7 @@ body {
 .reaction-wrapper .icons.save {
   /* align-items: left; */
   margin-left: auto;
+  margin-right: 0;
 }
 
 .right-col {
