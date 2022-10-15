@@ -1,495 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="assets/images/insta-favicon.ico"
-    />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="https://kit.fontawesome.com/83ccd457ed.js" crossorigin="anonymous"></script>
-    <title>Instagram</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbar-wrapper">
-        <img
-          src="assets/images/instagram_logo.png"
-          alt="Instagram logo"
-          class="logo"
-        />
-        <input type="text" class="search" placeholder="Search" />
-        <div class="nav-items">
-          <img
-            src="assets/images/nav-items/home.PNG"
-            class="icons"
-            alt="Home Icon"
-          />
-          <img
-            src="assets/images/nav-items/messenger.PNG"
-            class="icons"
-            alt="Messenger Icon"
-          />
-          <img
-            src="assets/images/nav-items/add.PNG"
-            class="icons"
-            alt="Add Icon"
-          />
-          <img
-            src="assets/images/nav-items/explore.PNG"
-            class="icons"
-            alt="Explore Icon"
-          />
-          <img
-            src="assets/images/nav-items/like.PNG"
-            class="icons"
-            alt="Like Icon"
-          />
-          <img
-            src="assets/images/nav-items/user.png"
-            class="icons user-account"
-            alt="User Profile"
-          />
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="assets/images/insta-favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/83ccd457ed.js" crossorigin="anonymous"></script>
+  <title>Instagram</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-wrapper">
+      <img src="assets/images/instagram_logo.png" alt="Instagram logo" class="logo" />
+      <input type="text" class="search" placeholder="Search" />
+      <div class="nav-items">
+        <img src="assets/images/nav-items/home.PNG" class="icons" alt="Home Icon" />
+        <img src="assets/images/nav-items/messenger.PNG" class="icons" alt="Messenger Icon" />
+        <img src="assets/images/nav-items/add.PNG" class="icons" alt="Add Icon" />
+        <img src="assets/images/nav-items/explore.PNG" class="icons" alt="Explore Icon" />
+        <img src="assets/images/nav-items/like.PNG" class="icons" alt="Like Icon" />
+        <img src="assets/images/nav-items/user.png" class="icons user-account" alt="User Profile" />
       </div>
-    </nav>
-    <nav class="navbar-mobile-top">
-      <div class="navbar-wrapper">
-        <img
-          src="assets/images/instagram_logo.png"
-          alt="Instagram logo"
-          class="logo"
-        />
-        <input type="text" class="search" placeholder="Search" />
-        <div class="nav-items">
+    </div>
+  </nav>
+  <nav class="navbar-mobile-top">
+    <div class="navbar-wrapper">
+      <img src="assets/images/instagram_logo.png" alt="Instagram logo" class="logo" />
+      <input type="text" class="search" placeholder="Search" />
+      <div class="nav-items">
 
-          <img
-            src="assets/images/nav-items/add.PNG"
-            class="icons"
-            alt="Add Icon"
-          />
-          <img
-            src="assets/images/nav-items/like.PNG"
-            class="icons"
-            alt="Like Icon"
-          />
-          <img
-            src="assets/images/nav-items/messenger.PNG"
-            class="icons"
-            alt="Messenger Icon"
-          />
+        <img src="assets/images/nav-items/add.PNG" class="icons" alt="Add Icon" />
+        <img src="assets/images/nav-items/like.PNG" class="icons" alt="Like Icon" />
+        <img src="assets/images/nav-items/messenger.PNG" class="icons" alt="Messenger Icon" />
 
-        </div>
       </div>
-    </nav>
-    <nav class="navbar-mobile-bottom">
-      <div class="navbar-wrapper">
-        <div class="nav-items">
-          <img
-            src="assets/images/nav-items/home.PNG"
-            class="icons"
-            alt="Home Icon"
-          />
-          <img
-            src="assets/images/nav-items/send.PNG"
-            class="icons"
-            alt="Add Icon"
-          />
-          <img
-            src="assets/images/nav-items/explore.PNG"
-            class="icons"
-            alt="Explore Icon"
-          />
-          <img
-            src="assets/images/nav-items/comment.PNG"
-            class="icons"
-            alt="Like Icon"
-          />
-          <img
-            src="assets/images/nav-items/user.png"
-            class="icons"
-            alt="Like Icon"
-          />
-        </div>
+    </div>
+  </nav>
+  <nav class="navbar-mobile-bottom">
+    <div class="navbar-wrapper">
+      <div class="nav-items">
+        <img src="assets/images/nav-items/home.PNG" class="icons" alt="Home Icon" />
+        <img src="assets/images/nav-items/send.PNG" class="icons" alt="Add Icon" />
+        <img src="assets/images/nav-items/explore.PNG" class="icons" alt="Explore Icon" />
+        <img src="assets/images/nav-items/comment.PNG" class="icons" alt="Like Icon" />
+        <img src="assets/images/nav-items/user.png" class="icons" alt="Like Icon" />
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section class="main">
-      <div class="wrapper">
-        <div class="left-col">
-            <div class="status-wrapper">
-              <button class="story--scroll" id="scroll-left" onclick="scrollHorizontal(1)"><i class="fas fa-chevron-left"></i></button>
-              <button class="story--scroll" id="scroll-right" onclick="scrollHorizontal(-1)"><i class="fas fa-chevron-right"></i></button>
-              <div class="stories">
-                <div class="status-card">
-                  <div class="status-pic">
-                    <img src="assets/images/profile/status-1.jpg" />
-                  </div>
-                  <p class="username">debajyoti_r...</p>
-                </div>
-                <div class="status-card">
-                  <div class="status-pic">
-                    <img src="assets/images/profile/status-2.jpg" />
-                  </div>
-                  <p class="username">su1nta</p>
-                </div>
-                <div class="status-card">
-                  <div class="status-pic">
-                    <img src="assets/images/profile/status-3.jpg" />
-                  </div>
-                  <p class="username">lexfridman</p>
-                </div>
-                <div class="status-card">
-                  <div class="status-pic">
-                    <img src="assets/images/profile/status-4.jpg" />
-                  </div>
-                  <p class="username">golimitless</p>
-                </div>
-                <div class="status-card">
-                  <div class="status-pic">
-                    <img src="assets/images/profile/status-5.jpg" />
-                  </div>
-                  <p class="username">markrober</p>
-                </div>
-                <div class="status-card">
-                  <div class="status-pic">
-                    <img src="assets/images/profile/status-6.jpg" />
-                  </div>
-                  <p class="username">hubermanlab</p>
-                </div>
-                <div class="status-card">
-                  <div class="status-pic">
-                    <img src="assets/images/profile/status-8.jpg" />
-                  </div>
-                  <p class="username">waitbutwhy</p>
-                </div>
-                <div class="status-card">
-                  <div class="status-pic">
-                    <img src="assets/images/profile/status-7.jpg" />
-                  </div>
-                  <p class="username">geeks_for_g...</p>
-                </div>
+  <section class="main">
+    <div class="wrapper">
+      <div class="left-col">
+        <div class="status-wrapper">
+          <button class="story--scroll" id="scroll-left" onclick="scrollHorizontal(1)"><i
+              class="fas fa-chevron-left"></i></button>
+          <button class="story--scroll" id="scroll-right" onclick="scrollHorizontal(-1)"><i
+              class="fas fa-chevron-right"></i></button>
+          <div class="stories">
+            <div class="status-card">
+              <div class="status-pic">
+                <img src="assets/images/profile/status-0.png" />
               </div>
+              <p class="username">that.suman</p>
             </div>
-          <!-- Posts------------------------------------------- ---------------------- -->
-          <div class="post">
-            <div class="info">
-              <div class="user">
-                <div class="status-pic">
-                  <img
-                    src="assets/images/profile/status-7.jpg"
-                    alt="Profile Image"
-                  />
-                </div>
-                <p class="username">geeks_for_geeks</p>
+            <div class="status-card">
+              <div class="status-pic">
+                <img src="assets/images/profile/status-1.jpg" />
               </div>
-              <img
-                src="assets/images/nav-items/option.PNG"
-                class="options"
-                alt="Options"
-              />
+              <p class="username">debajyoti_r...</p>
             </div>
-            <img
-              src="assets/images/post/post-1.jpg"
-              class="post-image"
-              alt="Geeks for Geeks post"
-            />
-            <div class="post-content">
-              <div class="reaction-wrapper">
-                <img src="assets/images/nav-items/like.PNG" class="icons" />
-                <img src="assets/images/nav-items/comment.PNG" class="icons" />
-                <img src="assets/images/nav-items/send.PNG" class="icons" />
-                <img
-                  src="assets/images/nav-items/save.PNG"
-                  class="save icons"
-                />
+            <div class="status-card">
+              <div class="status-pic">
+                <img src="assets/images/profile/status-2.jpg" />
               </div>
-              <p>Liked by <b>su1nta</b> and <b>1,032 others</b></p>
-              <p class="description">
-                <span>geeks_for_geeks</span>*glare intensifies* 😯 😯 😯 😯 😯
-              </p>
-              <p class="no-comments">View all 45 comments</p>
-              <p class="post-time">2 DAYS AGO</p>
+              <p class="username">su1nta</p>
             </div>
-            <!-- <hr /> -->
-            <div class="comment-wrapper">
-              <img src="assets/images/nav-items/smile.PNG" class="icons" />
-              <input
-                type="text"
-                class="comment-box"
-                placeholder="Add a comment..."
-              />
-              <button class="comment-btn">Post</button>
-            </div>
-          </div>
-          <div class="post">
-            <div class="info">
-              <div class="user">
-                <div class="status-pic">
-                  <img
-                    src="assets/images/profile/status-10.jpg"
-                    alt="Profile Image"
-                  />
-                </div>
-                <p class="username">kurzgesagt</p>
+            <div class="status-card">
+              <div class="status-pic">
+                <img src="assets/images/profile/status-3.jpg" />
               </div>
-              <img
-                src="assets/images/nav-items/option.PNG"
-                class="options"
-                alt="Options"
-              />
+              <p class="username">lexfridman</p>
             </div>
-            <img src="assets/images/post/post-2.jpg" class="post-image" />
-            <div class="post-content">
-              <div class="reaction-wrapper">
-                <img src="assets/images/nav-items/like.PNG" class="icons" />
-                <img src="assets/images/nav-items/comment.PNG" class="icons" />
-                <img src="assets/images/nav-items/send.PNG" class="icons" />
-                <img
-                  src="assets/images/nav-items/save.PNG"
-                  class="save icons"
-                />
+            <div class="status-card">
+              <div class="status-pic">
+                <img src="assets/images/profile/status-4.jpg" />
               </div>
-              <p class="likes">4,316 likes</p>
-              <p class="description">
-                <span>kurzgesagt</span>Verified Which of these pins reminds you
-                of your BBFF (best birb friend forever)?<br />
-                Tag them below! <br />Psst: You can get these Friendship Enamel
-                Pins from the official kurzgesagt friend shop. <br />🔗 Link in
-                Bio
-              </p>
-              <p class="no-comments">View all 283 comments</p>
-              <p class="post-time">2 DAYS AGO</p>
+              <p class="username">golimitless</p>
             </div>
-            <div class="comment-wrapper">
-              <img src="assets/images/nav-items/smile.PNG" class="icons" />
-              <input
-                type="text"
-                class="comment-box"
-                placeholder="Add a comment..."
-              />
-              <button class="comment-btn">Post</button>
-            </div>
-          </div>
-          <div class="post">
-            <div class="info">
-              <div class="user">
-                <div class="status-pic">
-                  <img
-                    src="assets/images/profile/status-8.jpg"
-                    alt="Profile Image"
-                  />
-                </div>
-                <p class="username">waitbutwhy</p>
+            <div class="status-card">
+              <div class="status-pic">
+                <img src="assets/images/profile/status-5.jpg" />
               </div>
-              <img
-                src="assets/images/nav-items/option.PNG"
-                class="options"
-                alt="Options"
-              />
+              <p class="username">markrober</p>
             </div>
-            <img src="assets/images/post/post-3.jpg" class="post-image" />
-            <div class="post-content">
-              <div class="reaction-wrapper">
-                <img src="assets/images/nav-items/like.PNG" class="icons" />
-                <img src="assets/images/nav-items/comment.PNG" class="icons" />
-                <img src="assets/images/nav-items/send.PNG" class="icons" />
-                <img
-                  src="assets/images/nav-items/save.PNG"
-                  class="save icons"
-                />
+            <div class="status-card">
+              <div class="status-pic">
+                <img src="assets/images/profile/status-6.jpg" />
               </div>
-              <p class="likes">4,833 likes</p>
-              <p class="description">
-                <span>waitbutwhy</span>At the center of our planet is a solid
-                sphere of iron and nickel the size of India (1,500mi across)
-                that's as hot as the surface of the sun, and its interaction
-                with the molten iron surrounding it generates the magnetic field
-                that keeps our atmosphere from being blown away by the solar
-                wind. It is a very important metal sphere.
-              </p>
-              <p class="no-comments">View all 45 comments</p>
-              <p class="post-time">6 DAYS AGO</p>
+              <p class="username">hubermanlab</p>
             </div>
-            <div class="comment-wrapper">
-              <img src="assets/images/nav-items/smile.PNG" class="icons" />
-              <input
-                type="text"
-                class="comment-box"
-                placeholder="Add a comment..."
-              />
-              <button class="comment-btn">Post</button>
-            </div>
-          </div>
-          <div class="post">
-            <div class="info">
-              <div class="user">
-                <div class="status-pic">
-                  <img
-                    src="assets/images/profile/status-4.jpg"
-                    alt="Profile Image"
-                  />
-                </div>
-                <p class="username">golimitless</p>
+            <div class="status-card">
+              <div class="status-pic">
+                <img src="assets/images/profile/status-8.jpg" />
               </div>
-              <img
-                src="assets/images/nav-items/option.PNG"
-                class="options"
-                alt="Options"
-              />
+              <p class="username">waitbutwhy</p>
             </div>
-            <img
-              src="assets/images/post/post-4.jpg"
-              class="post-image"
-              alt="post"
-            />
-            <div class="post-content">
-              <div class="reaction-wrapper">
-                <img src="assets/images/nav-items/like.PNG" class="icons" />
-                <img src="assets/images/nav-items/comment.PNG" class="icons" />
-                <img src="assets/images/nav-items/send.PNG" class="icons" />
-                <img
-                  src="assets/images/nav-items/save.PNG"
-                  class="save icons"
-                />
+            <div class="status-card">
+              <div class="status-pic">
+                <img src="assets/images/profile/status-7.jpg" />
               </div>
-              <p class="likes">23,666 likes</p>
-              <p class="description">
-                <span>golimitless</span>You don't need more time, you need more
-                focus.
-              </p>
-              <p class="no-comments">View all 342 comments</p>
-              <p class="post-time">SEPTEMBER 5</p>
-            </div>
-            <div class="comment-wrapper">
-              <img src="assets/images/nav-items/smile.PNG" class="icons" />
-              <input
-                type="text"
-                class="comment-box"
-                placeholder="Add a comment..."
-              />
-              <button class="comment-btn">Post</button>
+              <p class="username">geeks_for_g...</p>
             </div>
           </div>
         </div>
-        <div class="right-col">
-          <div class="profile-card">
-            <div class="status-pic">
-              <img src="assets/images/nav-items/user.png" />
+        <!-- Posts------------------------------------------- ---------------------- -->
+        <div class="post">
+          <div class="info">
+            <div class="user">
+              <div class="status-pic">
+                <img src="assets/images/profile/status-7.jpg" alt="Profile Image" />
+              </div>
+              <p class="username">geeks_for_geeks</p>
             </div>
-            <div>
-              <p class="pro-user">priyanshumaitra</p>
-              <p class="sub-text">Priyanshu Maitra</p>
-            </div>
-            <div class="action-div">
-              <button class="action-btn">Switch</button>
-            </div>
+            <img src="assets/images/nav-items/option.PNG" class="options" alt="Options" />
           </div>
-          <div class="profile-card">
-            <div>
-              <p class="suggestion-text">Suggestions for you</p>
+          <img src="assets/images/post/post-1.jpg" class="post-image" alt="Geeks for Geeks post" />
+          <div class="post-content">
+            <div class="reaction-wrapper">
+              <img src="assets/images/nav-items/like.PNG" class="icons" />
+              <img src="assets/images/nav-items/comment.PNG" class="icons" />
+              <img src="assets/images/nav-items/send.PNG" class="icons" />
+              <img src="assets/images/nav-items/save.PNG" class="save icons" />
             </div>
-            <div class="action-div">
-              <button class="seeall-btn">See All</button>
-            </div>
+            <p>Liked by <b>su1nta</b> and <b>1,032 others</b></p>
+            <p class="description">
+              <span>geeks_for_geeks</span>*glare intensifies* 😯 😯 😯 😯 😯
+            </p>
+            <p class="no-comments">View all 45 comments</p>
+            <p class="post-time">2 DAYS AGO</p>
           </div>
-          <div class="profile-card">
-            <div class="status-pic">
-              <img src="assets/images/follow-img/follow-1.jpg" />
-            </div>
-            <div>
-              <p class="pro-user">stoicarmy</p>
-              <p class="sug-text">New to Instagram&nbsp;</p>
-            </div>
-            <div class="action-div">
-              <button class="action-btn">Follow</button>
-            </div>
+          <!-- <hr /> -->
+          <div class="comment-wrapper">
+            <img src="assets/images/nav-items/smile.PNG" class="icons" />
+            <input type="text" class="comment-box" placeholder="Add a comment..." />
+            <button class="comment-btn">Post</button>
           </div>
-
-          <div class="profile-card">
-            <div class="status-pic">
-              <img src="assets/images/follow-img/follow-2.jpg" />
+        </div>
+        <div class="post">
+          <div class="info">
+            <div class="user">
+              <div class="status-pic">
+                <img src="assets/images/profile/status-10.jpg" alt="Profile Image" />
+              </div>
+              <p class="username">kurzgesagt</p>
             </div>
-            <div>
-              <p class="pro-user">visuallywise</p>
-              <p class="sug-text">New to Instagram&nbsp;</p>
-            </div>
-            <div class="action-div">
-              <button class="action-btn">Follow</button>
-            </div>
+            <img src="assets/images/nav-items/option.PNG" class="options" alt="Options" />
           </div>
-
-          <div class="profile-card">
-            <div class="status-pic">
-              <img src="assets/images/follow-img/follow-3.jpg" />
+          <img src="assets/images/post/post-2.jpg" class="post-image" />
+          <div class="post-content">
+            <div class="reaction-wrapper">
+              <img src="assets/images/nav-items/like.PNG" class="icons" />
+              <img src="assets/images/nav-items/comment.PNG" class="icons" />
+              <img src="assets/images/nav-items/send.PNG" class="icons" />
+              <img src="assets/images/nav-items/save.PNG" class="save icons" />
             </div>
-            <div>
-              <p class="pro-user">veritasium</p>
-              <p class="sug-text">Suggested for you</p>
-            </div>
-            <div class="action-div">
-              <button class="action-btn">Follow</button>
-            </div>
+            <p class="likes">4,316 likes</p>
+            <p class="description">
+              <span>kurzgesagt</span>Verified Which of these pins reminds you
+              of your BBFF (best birb friend forever)?<br />
+              Tag them below! <br />Psst: You can get these Friendship Enamel
+              Pins from the official kurzgesagt friend shop. <br />🔗 Link in
+              Bio
+            </p>
+            <p class="no-comments">View all 283 comments</p>
+            <p class="post-time">2 DAYS AGO</p>
           </div>
-          <div class="profile-card">
-            <div class="status-pic">
-              <img src="assets/images/follow-img/follow-4.jpg" />
-            </div>
-            <div>
-              <p class="pro-user">wisesages</p>
-              <p class="sug-text">Suggested for you</p>
-            </div>
-            <div class="action-div">
-              <button class="action-btn">Follow</button>
-            </div>
+          <div class="comment-wrapper">
+            <img src="assets/images/nav-items/smile.PNG" class="icons" />
+            <input type="text" class="comment-box" placeholder="Add a comment..." />
+            <button class="comment-btn">Post</button>
           </div>
-          <div class="profile-card">
-            <div class="status-pic">
-              <img src="assets/images/follow-img/follow-5.jpg" />
+        </div>
+        <div class="post">
+          <div class="info">
+            <div class="user">
+              <div class="status-pic">
+                <img src="assets/images/profile/status-8.jpg" alt="Profile Image" />
+              </div>
+              <p class="username">waitbutwhy</p>
             </div>
-            <div>
-              <p class="pro-user">lifedsn</p>
-              <p class="sug-text">Suggested for you</p>
+            <img src="assets/images/nav-items/option.PNG" class="options" alt="Options" />
+          </div>
+          <img src="assets/images/post/post-3.jpg" class="post-image" />
+          <div class="post-content">
+            <div class="reaction-wrapper">
+              <img src="assets/images/nav-items/like.PNG" class="icons" />
+              <img src="assets/images/nav-items/comment.PNG" class="icons" />
+              <img src="assets/images/nav-items/send.PNG" class="icons" />
+              <img src="assets/images/nav-items/save.PNG" class="save icons" />
             </div>
-            <div class="action-div">
-              <button class="action-btn">Follow</button>
+            <p class="likes">4,833 likes</p>
+            <p class="description">
+              <span>waitbutwhy</span>At the center of our planet is a solid
+              sphere of iron and nickel the size of India (1,500mi across)
+              that's as hot as the surface of the sun, and its interaction
+              with the molten iron surrounding it generates the magnetic field
+              that keeps our atmosphere from being blown away by the solar
+              wind. It is a very important metal sphere.
+            </p>
+            <p class="no-comments">View all 45 comments</p>
+            <p class="post-time">6 DAYS AGO</p>
+          </div>
+          <div class="comment-wrapper">
+            <img src="assets/images/nav-items/smile.PNG" class="icons" />
+            <input type="text" class="comment-box" placeholder="Add a comment..." />
+            <button class="comment-btn">Post</button>
+          </div>
+        </div>
+        <div class="post">
+          <div class="info">
+            <div class="user">
+              <div class="status-pic">
+                <img src="assets/images/profile/status-4.jpg" alt="Profile Image" />
+              </div>
+              <p class="username">golimitless</p>
             </div>
+            <img src="assets/images/nav-items/option.PNG" class="options" alt="Options" />
+          </div>
+          <img src="assets/images/post/post-4.jpg" class="post-image" alt="post" />
+          <div class="post-content">
+            <div class="reaction-wrapper">
+              <img src="assets/images/nav-items/like.PNG" class="icons" />
+              <img src="assets/images/nav-items/comment.PNG" class="icons" />
+              <img src="assets/images/nav-items/send.PNG" class="icons" />
+              <img src="assets/images/nav-items/save.PNG" class="save icons" />
+            </div>
+            <p class="likes">23,666 likes</p>
+            <p class="description">
+              <span>golimitless</span>You don't need more time, you need more
+              focus.
+            </p>
+            <p class="no-comments">View all 342 comments</p>
+            <p class="post-time">SEPTEMBER 5</p>
+          </div>
+          <div class="comment-wrapper">
+            <img src="assets/images/nav-items/smile.PNG" class="icons" />
+            <input type="text" class="comment-box" placeholder="Add a comment..." />
+            <button class="comment-btn">Post</button>
           </div>
         </div>
       </div>
-    </section>
+      <div class="right-col">
+        <div class="profile-card">
+          <div class="status-pic">
+            <img src="assets/images/nav-items/user.png" />
+          </div>
+          <div>
+            <p class="pro-user">priyanshumaitra</p>
+            <p class="sub-text">Priyanshu Maitra</p>
+          </div>
+          <div class="action-div">
+            <button class="action-btn">Switch</button>
+          </div>
+        </div>
+        <div class="profile-card">
+          <div>
+            <p class="suggestion-text">Suggestions for you</p>
+          </div>
+          <div class="action-div">
+            <button class="seeall-btn">See All</button>
+          </div>
+        </div>
+        <div class="profile-card">
+          <div class="status-pic">
+            <img src="assets/images/follow-img/follow-1.jpg" />
+          </div>
+          <div>
+            <p class="pro-user">stoicarmy</p>
+            <p class="sug-text">New to Instagram&nbsp;</p>
+          </div>
+          <div class="action-div">
+            <button class="action-btn">Follow</button>
+          </div>
+        </div>
 
-    <script>
-      let currentScroll = 0;
-      let scrollAmount = 320;
+        <div class="profile-card">
+          <div class="status-pic">
+            <img src="assets/images/follow-img/follow-2.jpg" />
+          </div>
+          <div>
+            <p class="pro-user">visuallywise</p>
+            <p class="sug-text">New to Instagram&nbsp;</p>
+          </div>
+          <div class="action-div">
+            <button class="action-btn">Follow</button>
+          </div>
+        </div>
 
-      const sCont = document.querySelector(".stories")
-      const hScroll = document.querySelector(".status-wrapper")
-      const leftButton = document.querySelector("#scroll-left")
-      const rightButton = document.querySelector("#scroll-right")
+        <div class="profile-card">
+          <div class="status-pic">
+            <img src="assets/images/follow-img/follow-3.jpg" />
+          </div>
+          <div>
+            <p class="pro-user">veritasium</p>
+            <p class="sug-text">Suggested for you</p>
+          </div>
+          <div class="action-div">
+            <button class="action-btn">Follow</button>
+          </div>
+        </div>
+        <div class="profile-card">
+          <div class="status-pic">
+            <img src="assets/images/follow-img/follow-4.jpg" />
+          </div>
+          <div>
+            <p class="pro-user">wisesages</p>
+            <p class="sug-text">Suggested for you</p>
+          </div>
+          <div class="action-div">
+            <button class="action-btn">Follow</button>
+          </div>
+        </div>
+        <div class="profile-card">
+          <div class="status-pic">
+            <img src="assets/images/follow-img/follow-5.jpg" />
+          </div>
+          <div>
+            <p class="pro-user">lifedsn</p>
+            <p class="sug-text">Suggested for you</p>
+          </div>
+          <div class="action-div">
+            <button class="action-btn">Follow</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
-      leftButton.style.opacity = '0'
+  <script>
+    let currentScroll = 0;
+    let scrollAmount = 320;
 
-      function scrollHorizontal(val){
-        currentScroll += (val * scrollAmount);
-        if(currentScroll >= 0){
-          currentScroll = 0
-          leftButton.style.opacity = '0'
-        }else{
-          leftButton.style.opacity = '1'
-        }
-        if(currentScroll <= maxScroll){
-          currentScroll = maxScroll
-          rightButton.style.opacity = '0'
-        }else{
-          rightButton.style.opacity = '1'
-        }
-        sCont.style.left = currentScroll + "px"
+    const sCont = document.querySelector(".stories")
+    const hScroll = document.querySelector(".status-wrapper")
+    const leftButton = document.querySelector("#scroll-left")
+    const rightButton = document.querySelector("#scroll-right")
+
+    let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
+    leftButton.style.opacity = '0'
+
+    function scrollHorizontal(val) {
+      currentScroll += (val * scrollAmount);
+      if (currentScroll >= 0) {
+        currentScroll = 0
+        leftButton.style.opacity = '0'
+      } else {
+        leftButton.style.opacity = '1'
       }
-    </script>
-  </body>
+      if (currentScroll <= maxScroll) {
+        currentScroll = maxScroll
+        rightButton.style.opacity = '0'
+      } else {
+        rightButton.style.opacity = '1'
+      }
+      sCont.style.left = currentScroll + "px"
+    }
+  </script>
+</body>
+
 </html>
