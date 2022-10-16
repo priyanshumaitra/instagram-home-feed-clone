@@ -86,16 +86,8 @@ git push origin -u your-branch-name
 
 ## Contributors
 
-<table>
-  <tbody>
-    <tr>
-      <td align="center"><a href="https://github.com/priyanshumaitra"><img alt="" src="https://avatars.githubusercontent.com/priyanshumaitra" width="130px;"><br><sub><b> Priyanshu Maitra </b></sub></a><br><a href="https://github.com/priyanshumaitra/Originals" title="Code">💻 </a></td> </a></td>
-      <td align="center"><a href="https://github.com/jsvigneshkanna"><img alt="" src="https://avatars.githubusercontent.com/u/42484705?v=4" width="130px;"><br><sub><b> J S Vignesh Kanna </b></sub></a><br><a href="https://github.com/jsvigneshkanna/Originals" title="Code">💻 </a></td> </a></td>
-      <td align="center"><a href="https://github.com/rrsingh11"><img alt="" src="https://avatars.githubusercontent.com/u/86000208?v=4" width="130px;"><br><sub><b> Ritu Raj Singh </b></sub></a><br><a href="https://github.com/rrsingh11/Originals" title="Code">💻 </a></td> </a></td>
-     <td align="center"><a href="https://github.com/satyamrs00"><img alt="" src="https://avatars.githubusercontent.com/u/96380323?v=4" width="130px;"><br><sub><b> Satyam Sagar </b></sub></a><br><a href="https://github.com/satyamrs00/Originals" title="Code">💻 </a></td> </a></td>
-     
-   </tr>
-  </tbody>
-</table>
+<a href="https://github.com/priyanshumaitra/instagram-home-feed-clone/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=priyanshumaitra/instagram-home-feed-clone" />
+</a>
 
 <h2 align="center"> Thank you :smiley: </h2>
